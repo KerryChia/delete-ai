@@ -1,10 +1,10 @@
 # quaiwei · 中文去 AI 味编辑 Skill
 
-**去 AI 味，而不是降 AI 率。** 一个用于 AI 编码助手的中文编辑 skill：对文本做三层诊断、在事实保护下做最小必要改写、缺材料时追问作者，而不是一台禁词替换机。
+**去 AI 味，而不是降 AI 率。** 一个给 AI 编码助手用的中文编辑 skill：先诊断再改写，改动有事实保护，缺材料就问作者；不是拿着禁词表逐个替换。
 
 A Chinese editing skill for AI coding agents: diagnose before rewriting, protect facts, ask the author when material is missing — instead of running a blacklist of "AI-sounding" words. (中文为主，见下文。)
 
-## 它做什么，不做什么
+## 它做什么，不承诺什么
 
 **做：**
 
@@ -20,7 +20,7 @@ A Chinese editing skill for AI coding agents: diagnose before rewriting, protect
 - 不靠虚构亲身经历、编造数据来源、堆砌语气词来制造"人味"。
 - 不把学术、公文、法律文本改成聊天体；"无需修改"是正常结论。
 
-## 为什么不是又一个禁词表
+## 不做禁词表的理由
 
 开源社区已有不少优秀的去 AI 味 skill，它们共同的短板是：规则清单越长，误伤越多——把真实纠错、有意修辞、专业表达一起删掉。quaiwei 的设计针对这一点：
 
@@ -70,7 +70,7 @@ quaiwei/
     └── examples.md       # 13 组改写示例 + 反面清单
 ```
 
-## 已知局限（诚实声明）
+## 已知局限
 
 - 规则是**编辑启发式**，未经大规模用户盲测验证；欢迎用真实稿件测试并提 issue。
 - 改写质量上限取决于执行它的底层模型；建议搭配中文能力强的模型。
@@ -78,7 +78,7 @@ quaiwei/
 
 ## 评测建议
 
-拿 5–10 篇真实草稿，比较：建议采纳率、误改率（本来干净的句子被改坏）、事实保真（数字/情态/引用是否原样）。本 skill 的验收标准是**读者和作者是否更愿意采用修改稿**，不是任何检测分数。
+拿 5–10 篇真实草稿，比较：建议采纳率、误改率（本来干净的句子被改坏）、事实保真（数字/情态/引用是否原样）。本 skill 的验收标准是读者和作者是否更愿意采用修改稿，不是任何检测分数。
 
 ## 致谢
 
