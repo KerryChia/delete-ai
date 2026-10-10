@@ -41,8 +41,8 @@ A Chinese editing skill for AI coding agents: diagnose before rewriting, protect
 
 ```bash
 # ZCode / Claude Code / Codex 等支持 skill 目录的 agent
-git clone https://github.com/<you>/quaiwei.git
-cp -r quaiwei ~/.zcode/skills/     # 或 ~/.claude/skills/ ~/.codex/skills/
+git clone https://github.com/KerryChia/delete-ai.git
+cp -r delete-ai ~/.zcode/skills/quaiwei     # 或 ~/.claude/skills/quaiwei ~/.codex/skills/quaiwei
 ```
 
 也可以直接把 `SKILL.md` 与 `references/` 的内容当作系统提示词使用——但按需加载 references 的完整体验需要 agent 的 skill 机制。
